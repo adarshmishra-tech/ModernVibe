@@ -3,96 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="ModernVibe Pro, premium theme, responsive web design, portfolio theme">
-  <meta name="description" content="ModernVibe Pro: A premium, responsive web theme by Adarsh Mishra with advanced animations and customization.">
-  <meta property="og:title" content="ModernVibe Pro by Adarsh Mishra">
-  <meta property="og:description" content="Elevate your website with ModernVibe Pro's stunning design and performance.">
-  <meta property="og:type" content="website">
-  <title>ModernVibe Pro - Ultimate Web Theme</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>ModernVibe Pro - Elite Website Theme</title>
+  <meta name="description" content="Elevate your online presence with ModernVibe Pro, a premium, responsive theme with dark/light modes and cinematic animations.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Premium Typography via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body itemscope itemtype="https://schema.org/WebPage">
+<body class="light-mode">
+  <!-- Premium Header with Enhanced Navigation -->
   <header class="header">
-    <nav class="nav container">
-      <div class="logo">ModernVibe Pro</div>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><button id="theme-toggle" class="theme-btn">Toggle Theme</button></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1 class="logo">ModernVibe Pro</h1>
+      <!-- Mobile menu toggle for seamless mobile experience -->
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Premium Theme Toggle with Smooth Transition -->
+      <button class="theme-toggle" aria-label="Switch between light and dark modes">
+        <img src="sun.svg" alt="Light Mode Icon" class="theme-icon light-icon">
+        <img src="moon.svg" alt="Dark Mode Icon" class="theme-icon dark-icon">
+      </button>
+    </div>
   </header>
 
+  <!-- Hero Section with Parallax Effect -->
   <section id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="container">
-      <h1 itemprop="name">ModernVibe Pro</h1>
-      <p itemprop="description">A premium web theme by Adarsh Mishra, crafted for developers and businesses to create unforgettable digital experiences.</p>
-      <a href="#contact" class="cta">Start Your Journey</a>
+      <h2 class="hero-title">Elevate Your Digital Presence</h2>
+      <p class="hero-subtitle">Discover the pinnacle of web design with ModernVibe Pro – responsive, elegant, and infinitely customizable.</p>
+      <div class="hero-buttons">
+        <a href="#services" class="cta-button primary">Explore Features</a>
+        <a href="#contact" class="cta-button secondary">Get Started</a>
+      </div>
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio">
+  <!-- About Section with Premium Storytelling -->
+  <section id="about" class="section about-section">
     <div class="container">
-      <h2>Our Portfolio</h2>
+      <h2 class="section-title">Why Choose ModernVibe Pro?</h2>
+      <div class="about-content">
+        <p>Crafted for visionaries, ModernVibe Pro delivers unmatched elegance through cutting-edge responsiveness, immersive animations, and effortless customization. Transform your vision into reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section with Icon Grid -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <h2 class="section-title">Premium Features</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="responsive.svg" alt="Ultra-Responsive Design">
+          <h3>Ultra-Responsive</h3>
+          <p>Flawless adaptation across every device, ensuring pixel-perfect experiences from smartphones to large screens.</p>
+        </div>
+        <div class="service-card">
+          <img src="customizable.svg" alt="Infinite Customization">
+          <h3>Infinite Customization</h3>
+          <p>Seamlessly tailor every element – colors, typography, layouts – to embody your unique brand identity.</p>
+        </div>
+        <div class="service-card">
+          <img src="performance.svg" alt="Lightning Performance">
+          <h3>Lightning Performance</h3>
+          <p>Optimized for speed with minimal footprint, delivering instant loads and superior user engagement.</p>
+        </div>
+        <div class="service-card">
+          <img src="secure.svg" alt="Fortified Security">
+          <h3>Fortified Security</h3>
+          <p>Built-in safeguards and clean code practices to protect your site and user data effortlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section for Showcase -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <h2 class="section-title">Showcase Excellence</h2>
       <div class="portfolio-grid">
-        <div class="portfolio-item vibe-animate" itemprop="image">
-          <img src="assets/images/project1.jpg" alt="Project 1" loading="lazy">
-          <div class="overlay">Project One</div>
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Project One">
+          <div class="portfolio-overlay">
+            <h3>Project Alpha</h3>
+            <p>Innovative e-commerce solution</p>
+          </div>
         </div>
-        <div class="portfolio-item vibe-animate" itemprop="image">
-          <img src="assets/images/project2.jpg" alt="Project 2" loading="lazy">
-          <div class="overlay">Project Two</div>
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Project Two">
+          <div class="portfolio-overlay">
+            <h3>Project Beta</h3>
+            <p>Dynamic corporate portal</p>
+          </div>
         </div>
-        <div class="portfolio-item vibe-animate" itemprop="image">
-          <img src="assets/images/project3.jpg" alt="Project 3" loading="lazy">
-          <div class="overlay">Project Three</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <h2>What Our Users Say</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial vibe-animate">
-          <p>"ModernVibe Pro transformed our website with its sleek design and performance!"</p>
-          <cite>Jane Doe, Web Developer</cite>
-        </div>
-        <div class="testimonial vibe-animate">
-          <p>"The customization options are endless, and the support is top-notch!"</p>
-          <cite>John Smith, Agency Owner</cite>
+        <div class="portfolio-item">
+          <img src="project3.jpg" alt="Project Three">
+          <div class="portfolio-overlay">
+            <h3>Project Gamma</h3>
+            <p>Creative agency showcase</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <!-- Contact Section with Form Integration -->
+  <section id="contact" class="section contact-section">
     <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required aria-label="Name">
-        <input type="email" name="email" placeholder="Your Email" required aria-label="Email">
-        <textarea name="message" placeholder="Your Message" required aria-label="Message"></textarea>
-        <button type="submit" class="cta">Send Message</button>
+      <h2 class="section-title">Connect With Us</h2>
+      <p class="contact-subtitle">Ready to launch your premium site? Let's collaborate.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="cta-button primary">Send Inquiry</button>
       </form>
     </div>
   </section>
 
+  <!-- Premium Footer with Social Links -->
   <footer class="footer">
     <div class="container">
-      <p>ModernVibe Pro &copy; 2025 by Adarsh Mishra. All rights reserved.</p>
-      <p>Contact: <a href="mailto:adarshmishraa121@gmail.com">adarshmishraa121@gmail.com</a></p>
-      <div class="social-links">
-        <a href="#" aria-label="Twitter"><svg>...</svg></a>
-        <a href="#" aria-label="LinkedIn"><svg>...</svg></a>
+      <div class="footer-content">
+        <p>&copy; 2025 ModernVibe Pro. Crafted with excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><img src="twitter.svg" alt="Twitter"></a>
+          <a href="#" aria-label="LinkedIn"><img src="linkedin.svg" alt="LinkedIn"></a>
+          <a href="#" aria-label="GitHub"><img src="github.svg" alt="GitHub"></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
